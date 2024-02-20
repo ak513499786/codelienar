@@ -1,10 +1,10 @@
-
 const nodemailer= require("nodemailer");
 var validator = require("node-email-validation");
 const { response } = require("express");
 
 const sendMailContact = (req, res) => {
     const { username, lastname, email, message } = req.body;
+    console.log('happy');
     if(validator.is_email_valid(email)){
       const transporter = nodemailer.createTransport({
         service: "gmail",
@@ -15,7 +15,7 @@ const sendMailContact = (req, res) => {
       });
       const mailOptions = {
         from: { email },
-        to: "ahmed@codelinear.com",
+        to: "info@codelinear.com",
         subject: "New message from your website",
         text: `FirstName: ${username}\nLastName: ${lastname}\nEmail: ${email}\nMessage: ${message}`,
       };
