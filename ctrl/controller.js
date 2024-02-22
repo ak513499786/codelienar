@@ -9,8 +9,8 @@ const sendMailContact = (req, res) => {
       const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-          user: "ahmedkhan.cse010@gmail.com",
-          pass: "dpyq uhvd jlgj tarb",
+          user: "developer@codelinear.com",
+          pass: "umlw qvhn nslr udrt",
         },
       });
       const mailOptions = {
