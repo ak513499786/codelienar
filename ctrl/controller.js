@@ -13,7 +13,7 @@ const sendMailContact = (req, res) => {
     });
     const mailOptions = {
       from: "Codelinear <developer@codelinear.com>",
-      to: "ahmed@codelinear.com",
+      to: "info@codelinear.com",
       subject: "New message from your website",
       text: `Name: ${username} ${lastname}\nEmail: ${email}\n\nMessage: ${message}`,
     };
